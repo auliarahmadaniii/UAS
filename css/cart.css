@@ -1,0 +1,114 @@
+main{
+    width: 100%;
+    height: 100vh;
+    background-color: #ee9617;
+    background-image: linear-gradient(315deg, #ee9617 0%, #fe5858 74%);
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cart-box{
+    padding: 20px;
+    width: 1280px;
+    height: 600px;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    overflow: auto;
+}
+.cart-box::-webkit-scrollbar{
+    width: 10px;
+}
+.cart-box::-webkit-scrollbar-track{
+    box-shadow: insert 0 0 5px grey;
+    border-radius: 10px;
+}
+.cart-box::-webkit-scrollbar-thumb{
+    background-color: orange;
+    border-radius: 10px;
+}
+.cart-box::-webkit-scrollbar-thumb:hover{
+    background: orangered;
+}
+.cart-box h2{
+    padding: 10px;
+    border-bottom: 3px solid orangered;
+    color: orangered;
+}
+.checkout{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 3px solid #afafafa6;
+    justify-content: space-between;
+}
+.checkout .gambar img{
+    border-radius: 20px;
+    background-color: orange;
+    width: 150px;
+    height: 150px;
+}
+.checkout .ket{
+    width: 300px;
+    margin-right: 300px;
+    padding: 20px;
+}
+.checkout .ket label,
+.checkout .ket select{
+    margin-top: 30px;
+}
+.remove{
+    width: 200px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.remove img{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.remove h4{
+    border-radius: 10px;
+    background-color: orangered;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+.cart-box .footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.footer .back{
+    margin-right: 75%;
+}
+.footer .back a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: orange;
+    text-decoration: none;
+}
+.footer .back a:hover{
+    color: orangered;
+    text-decoration: underline;
+}
+.footer .bayar button{
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: orange;
+    color: white;
+}

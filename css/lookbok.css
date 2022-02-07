@@ -1,0 +1,198 @@
+.container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+}
+header{
+    grid-area: header;
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: auto;
+    background-color:rgba(0,0,0,.8);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    grid-template-areas: 
+    'icon'
+    'menu';
+}
+.icon{
+    grid-area: icon;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .icon .cart{
+    width: 60px;
+    height: 50px;
+    transition: 0.5s;
+  }
+  .icon .cart:hover{
+    transform: scale(1.2);
+  }
+  .icon .login{
+    width: 60px;
+    height: 50px;
+    transition: 0.5s;
+  }
+  .icon .login:hover{
+    transform: scale(1.2);
+  }
+  .icon .moriarty{
+    margin-top: -20px;
+    width: 120px;
+    height: 75px;
+    cursor: pointer;
+  }
+  header .menu{
+    width: 80%;
+    grid-area: menu;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  .menu ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+  .menu li{
+    height: 30px;
+  }
+  .menu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: 0.3s;
+    line-height: 30px;
+  }
+  .menu a:hover{
+    background-color: orange;
+  }
+main{
+    grid-area: main;
+    background-color: aliceblue;
+    width: 100%;
+    height: auto;
+}
+main .judul{
+    width: 300px;
+    height: 50px;
+    margin: auto;
+    margin: 20px auto;
+    text-align: center;
+  }
+main .judul span{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 50px;
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-style: italic;
+    text-shadow: 2px 2px 2px orangered;
+  }
+.wrapper{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+main h2{
+    display: inline-block;
+    color: #ffa500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    padding: 4px 20px;
+    float: left;
+}
+.wrapper .lookbook{
+    width: auto;
+    height: auto;
+    margin: 30px 10px;
+    position: relative;
+}
+.wrapper .lookbook span{
+    display: block;
+    width: 288px;
+    height: 432px;
+    border-radius: 5px;
+    background-color: rgba(200, 200, 200,.6);
+    position: absolute;
+    top: 0;
+    text-align: center;
+    line-height: 432px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: orange;
+    text-shadow: 1px 1px 1px orangered;
+    opacity: 0;
+    transform: scale(0) rotate(0);
+    transition: 0.3s;
+}
+.wrapper .lookbook a:hover span{
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+.wrapper .lookbook img{
+    width: 288px;
+    height: 432px;
+    border-radius: 5px;
+}
+footer{
+    grid-area: footer;
+    background-color: rgba(0,0,0,.9);
+    width: 100%;
+}
+.footer-content{
+    text-align: center;
+    width: 250px;
+    padding: 40px;
+    margin-right: 100px;
+    float: left;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+.footer-content a{
+    text-decoration: none;
+  }
+.footer-content a p{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.footer-content2{
+    text-align: center;
+    width: 250px;
+    padding: 40px;
+    margin-right: 100px;
+    float: left;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+.footer-content2 p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.footer-content3{
+    padding: 40px;
+    margin-right: 100px;
+    text-align: center;
+    width: 350px;
+    float: right;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+.footer-content3 button{
+    width: 50px;
+    background-color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: aliceblue;
+  }
